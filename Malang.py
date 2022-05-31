@@ -395,16 +395,16 @@ logo = ("""\033[1;32m
 \033[1;34m|  |  |     | | | |   __|     |  |  |     |
 \033[1;32m|_____|__|__|_|___|_____|__|__|____/|__|__|
                                             \033
-__________________×______________________
+\033[1;33m__________________×______________________
   
   Auther   :  JANZADA KHAN 
  
-  GANG   :  JANZADA KHAN
-
-  Facebook: Janzada Khan    (70% Idz Open Just Now)❤️
-
+  GANG   :  ROYAL SQUAD 001
+  
+  Facebook: Janzada Khan    
+  (70% Idz Open Just Now)
   WhatsApp: 03099006070
-__________________×______________________\033[1;37m""")
+\033[1;33m__________________×______________________\033[1;35m""")
 
 class Main:
 	def __init__(self):
@@ -453,16 +453,16 @@ class Main:
 			
 			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n\033[1;32m [!] USE (123456) FOR IDZ\033[1;37m ")
+				print("\n\033[1;33m [!] USE (123456) FOR IDZ\033[1;37m ")
 				listpass = input("%s [?] Enter Password :%s "%(G,Y))
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
-				print("\n%s [+] SUCESSFUL  SAVED IN -> ok.txt"%(Y))
-				print("%s [+] CHECKPOINT SAVED IN -> cp.txt"%(G))
-				print("%s [!] IF NO PROCESS THEN USE AIRPLANE MODE 5 SECONDS\x1b[0m\n"%(P))
+				print("\n%s [+] OK IDZ  SAVED IN -> ok.txt"%(Y))
+				print("%s [+] CP IDZ  SAVED IN -> cp.txt"%(G))
+				print("%s [!] IF NO PROCES THEN USE AIRPLANE MODE 5 SECONDS\x1b[0m\n"%(P))
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
 			exit("\n\n [>>] PROCESS COMPLETE...")

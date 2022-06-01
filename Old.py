@@ -438,4 +438,5 @@ def choice_select():
 	print("")
 	raw_input(" Press enter to back")
 	choice()
+if __name__ == '__main__':
 	menu()
